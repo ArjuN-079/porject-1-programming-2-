@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Module4 Task4- seeder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+227995064ba23f77173ead88bbb1b2f4281346ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26d44a0247b7924b2e801f27411540d8c02de2bb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Module4 Task4- seeder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Module4 Task4- seeder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

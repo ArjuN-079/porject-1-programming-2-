@@ -1,3 +1,5 @@
+using Microsoft.VisualBasic.Devices;
+
 namespace Module4_Task4__seeder
 {
     public partial class Form1 : Form
@@ -7,14 +9,15 @@ namespace Module4_Task4__seeder
         private static List<Course> courses;
 
         private static List<Learner> learners;
-        private static List<lecturer> lecturers = new();
+        private static List<Lecturer> lecturers;
         public Form1()
         {
             InitializeComponent();
             institutions = Seeder.SeedInstitutions();
             departments = Seeder.SeedDepartments();
             courses = Seeder.SeedCourses();
-            learners = new List<Learner?>();
+            learners = new List<Learner>();
+            lecturers = new List<Lecturer>();
             DataHandler.ReadFromFile("learners.txt", learners, courses);
             DataHandler.LecturersFile("lecturers.txt", lecturers, courses);
 
@@ -43,7 +46,7 @@ namespace Module4_Task4__seeder
             MessageBox.Show(course2.DisplayInfo().ToString());
         }
 
-      
+
 
         //course details
         private void button1_Click(object sender, EventArgs e)
@@ -62,7 +65,7 @@ namespace Module4_Task4__seeder
             }).ToList();
 
         }
-        
+
         //display course details
         private void button2_Click_1(object sender, EventArgs e)
         {
@@ -79,7 +82,12 @@ namespace Module4_Task4__seeder
         }
         private void button10_Click(object sender, EventArgs e)
         {
+            dataGridView1.DataSource = learners.Select(learner => new
+            {
+                learner.FirstName,
+                learner.LastName,
 
+            }).ToList();
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -89,7 +97,16 @@ namespace Module4_Task4__seeder
         // Display All grades
         private void button3_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource= 
+            dataGridView1.DataSource = learners.Select(learner => new
+            {
+                learner.Id,
+                learner.FirstName,
+                learner.LastName,
+                courses_code = learner.CourseAssessmentMark.Course.Code,
+                courses_name = learner.CourseAssessmentMark.Course.Name,
+                Grades = string.Join(",", learner.CourseAssessmentMark.GetAllGrades())
+            }).ToList();
+
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -105,6 +122,92 @@ namespace Module4_Task4__seeder
         private void button12_Click(object sender, EventArgs e)
         {
 
+        }
+        //Display Highest Marks
+        private void button4_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = learners.Select(learner => new
+            {
+                learner.Id,
+                learner.FirstName,
+                learner.LastName,
+                courses_code = learner.CourseAssessmentMark.Course.Code,
+                courses_name = learner.CourseAssessmentMark.Course.Name,
+                HighestMarks = string.Join(",", learner.CourseAssessmentMark.GetHighestMarks())
+            }).ToList();
+        }
+        //Display Lowest Marks
+        private void button5_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = learners.Select(learner => new
+            {
+                learner.Id,
+                learner.FirstName,
+                learner.LastName,
+                courses_code = learner.CourseAssessmentMark.Course.Code,
+                courses_name = learner.CourseAssessmentMark.Course.Name,
+                LowestMarks = string.Join(",", learner.CourseAssessmentMark.GetLowestMarks())
+            }).ToList();
+        }
+        //Display Fail Marks
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+            dataGridView1.DataSource = learners.Select(learner => new
+            {
+                learner.Id,
+                learner.FirstName,
+                learner.LastName,
+                courses_code = learner.CourseAssessmentMark.Course.Code,
+                courses_name = learner.CourseAssessmentMark.Course.Name,
+                FailMarks = string.Join(",", learner.CourseAssessmentMark.GetFailMarks())
+            }).ToList();
+        }
+        //Display Average Marks
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+            dataGridView1.DataSource = learners.Select(learner => new
+            {
+                learner.Id,
+                learner.FirstName,
+                learner.LastName,
+                courses_code = learner.CourseAssessmentMark.Course.Code,
+                courses_name = learner.CourseAssessmentMark.Course.Name,
+                AverageMarks = string.Join(",", learner.CourseAssessmentMark.GetAverageMark())
+            }).ToList();
+        }
+        //Display Average Grades
+        private void button8_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = learners.Select(learner => new
+            {
+                learner.Id,
+                learner.FirstName,
+                learner.LastName,
+                courses_code = learner.CourseAssessmentMark.Course.Code,
+                courses_name = learner.CourseAssessmentMark.Course.Name,
+                AverageGrades = string.Join(",", learner.CourseAssessmentMark.GetAverageGrade
+                ())
+            }).ToList();
+        }
+        //Display Lecturer Details
+        private void button9_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = lecturers.Select(lecturer => new
+            {
+                lecturer.Id,
+                lecturer.FirstName,
+                lecturer.LastName,
+                lecturer.Position,
+                lecturer.Course.Department.Institution.Name,
+                lecturer.Course.Department.Institution.Region,
+                lecturer.Course.Department.Institution.Country,
+                lecturer.Course.Department,
+                lecturer.Course.Code,
+                lecturer.Salary
+                
+            }).ToList();
         }
     }
 }

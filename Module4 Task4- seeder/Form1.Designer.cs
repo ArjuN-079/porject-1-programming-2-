@@ -48,9 +48,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(33, 35);
+            button1.Location = new Point(38, 47);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(166, 23);
+            button1.Size = new Size(190, 31);
             button1.TabIndex = 0;
             button1.Text = "1. Display Course Details";
             button1.UseVisualStyleBackColor = true;
@@ -59,16 +60,19 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(234, 12);
+            dataGridView1.Location = new Point(267, 16);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1053, 608);
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(1203, 811);
             dataGridView1.TabIndex = 1;
             // 
             // button2
             // 
-            button2.Location = new Point(33, 73);
+            button2.Location = new Point(38, 97);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(166, 23);
+            button2.Size = new Size(190, 31);
             button2.TabIndex = 2;
             button2.Text = "2.Display All Marks";
             button2.UseVisualStyleBackColor = true;
@@ -76,9 +80,10 @@
             // 
             // button3
             // 
-            button3.Location = new Point(33, 113);
+            button3.Location = new Point(38, 151);
+            button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
-            button3.Size = new Size(166, 23);
+            button3.Size = new Size(190, 31);
             button3.TabIndex = 3;
             button3.Text = "3. Display All Grades";
             button3.UseVisualStyleBackColor = true;
@@ -86,63 +91,76 @@
             // 
             // button4
             // 
-            button4.Location = new Point(33, 155);
+            button4.Location = new Point(38, 207);
+            button4.Margin = new Padding(3, 4, 3, 4);
             button4.Name = "button4";
-            button4.Size = new Size(166, 23);
+            button4.Size = new Size(190, 31);
             button4.TabIndex = 4;
             button4.Text = "4. Display Highest Marks";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
-            button5.Location = new Point(33, 205);
+            button5.Location = new Point(38, 273);
+            button5.Margin = new Padding(3, 4, 3, 4);
             button5.Name = "button5";
-            button5.Size = new Size(166, 23);
+            button5.Size = new Size(190, 31);
             button5.TabIndex = 5;
             button5.Text = "5. Display Lowest Marks";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
-            button6.Location = new Point(33, 250);
+            button6.Location = new Point(38, 333);
+            button6.Margin = new Padding(3, 4, 3, 4);
             button6.Name = "button6";
-            button6.Size = new Size(166, 23);
+            button6.Size = new Size(190, 31);
             button6.TabIndex = 6;
             button6.Text = "6. Display Fail Marks";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
-            button7.Location = new Point(33, 291);
+            button7.Location = new Point(38, 388);
+            button7.Margin = new Padding(3, 4, 3, 4);
             button7.Name = "button7";
-            button7.Size = new Size(166, 23);
+            button7.Size = new Size(190, 31);
             button7.TabIndex = 7;
             button7.Text = "7. Display Average Marks";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
-            button8.Location = new Point(33, 332);
+            button8.Location = new Point(38, 443);
+            button8.Margin = new Padding(3, 4, 3, 4);
             button8.Name = "button8";
-            button8.Size = new Size(166, 23);
+            button8.Size = new Size(190, 31);
             button8.TabIndex = 8;
             button8.Text = "8. Display Average Grades";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
-            button9.Location = new Point(33, 377);
+            button9.Location = new Point(38, 503);
+            button9.Margin = new Padding(3, 4, 3, 4);
             button9.Name = "button9";
-            button9.Size = new Size(166, 23);
+            button9.Size = new Size(190, 31);
             button9.TabIndex = 9;
             button9.Text = "9. Display Lecturer Details";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // button10
             // 
-            button10.Location = new Point(33, 421);
+            button10.Location = new Point(38, 561);
+            button10.Margin = new Padding(3, 4, 3, 4);
             button10.Name = "button10";
-            button10.Size = new Size(166, 23);
+            button10.Size = new Size(190, 31);
             button10.TabIndex = 10;
             button10.Text = "10. Add a Learner";
             button10.UseVisualStyleBackColor = true;
@@ -150,9 +168,10 @@
             // 
             // button11
             // 
-            button11.Location = new Point(33, 462);
+            button11.Location = new Point(38, 616);
+            button11.Margin = new Padding(3, 4, 3, 4);
             button11.Name = "button11";
-            button11.Size = new Size(166, 23);
+            button11.Size = new Size(190, 31);
             button11.TabIndex = 11;
             button11.Text = "11. Add a Lecturer";
             button11.UseVisualStyleBackColor = true;
@@ -160,9 +179,10 @@
             // 
             // button12
             // 
-            button12.Location = new Point(33, 510);
+            button12.Location = new Point(38, 680);
+            button12.Margin = new Padding(3, 4, 3, 4);
             button12.Name = "button12";
-            button12.Size = new Size(166, 23);
+            button12.Size = new Size(190, 31);
             button12.TabIndex = 12;
             button12.Text = "CalculaRemove a Lecturer";
             button12.UseVisualStyleBackColor = true;
@@ -170,9 +190,10 @@
             // 
             // button13
             // 
-            button13.Location = new Point(33, 551);
+            button13.Location = new Point(38, 735);
+            button13.Margin = new Padding(3, 4, 3, 4);
             button13.Name = "button13";
-            button13.Size = new Size(166, 23);
+            button13.Size = new Size(190, 31);
             button13.TabIndex = 13;
             button13.Text = "Calculations";
             button13.UseVisualStyleBackColor = true;
@@ -180,9 +201,10 @@
             // 
             // button14
             // 
-            button14.Location = new Point(33, 597);
+            button14.Location = new Point(38, 796);
+            button14.Margin = new Padding(3, 4, 3, 4);
             button14.Name = "button14";
-            button14.Size = new Size(166, 23);
+            button14.Size = new Size(190, 31);
             button14.TabIndex = 14;
             button14.Text = "EXIT";
             button14.UseVisualStyleBackColor = true;
@@ -190,9 +212,9 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1326, 664);
+            ClientSize = new Size(1515, 885);
             Controls.Add(button14);
             Controls.Add(button2);
             Controls.Add(button13);
@@ -208,6 +230,7 @@
             Controls.Add(button3);
             Controls.Add(dataGridView1);
             Controls.Add(button1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

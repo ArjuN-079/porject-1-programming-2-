@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Module4_Task4__seeder
 {
-    public class lecturer:person
+    public class Lecturer : person
     {
         private Eposition position;
         private ESalary salary;
         private Course course;
 
-        public lecturer(int id, string firstName, string lastName, Eposition position, ESalary salary, Course course): base(id, firstName, lastName)
+        public Lecturer(int id, string firstName, string lastName, Eposition position, ESalary salary, Course course): base(id, firstName, lastName)
         {
             this.position = position;
             this.salary = salary;

@@ -34,7 +34,7 @@ namespace Module4_Task4__seeder
             }
         }
         //adding the same code to lecturer file
-        public static void LecturersFile(string filePath, List<lecturer> lecturers, List<Course> courses)
+        public static void LecturersFile(string filePath, List<Lecturer> lecturers, List<Course> courses)
         {
             List<string> lines = File.ReadAllLines(filePath).ToList();
             foreach (string line in lines)
@@ -49,7 +49,7 @@ namespace Module4_Task4__seeder
                 Eposition position = (Eposition)positionNum;
                 ESalary salary = (ESalary)salaryNum;
                 Course course = courses[courseNum];
-                lecturer lecturer = new lecturer(id, firstName, lastName, (Eposition)position, (ESalary)salary, course);
+                Lecturer lecturer = new Lecturer(id, firstName, lastName, (Eposition)position, (ESalary)salary, course);
                 lecturers.Add(lecturer);
             }
         }
