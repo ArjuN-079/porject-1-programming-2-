@@ -1,5 +1,12 @@
+using Microsoft.VisualBasic.ApplicationServices;
 using Microsoft.VisualBasic.Devices;
+using System.Diagnostics.Metrics;
+using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
+using static System.Reflection.Metadata.BlobBuilder;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace Module4_Task4__seeder
 {
@@ -189,7 +196,21 @@ namespace Module4_Task4__seeder
 
             }).ToList();
         }
-        //Add learner
+        //Add learner(adding the learner is some issue)
+
+        // youtube and w3 school and the help of copilot
+        /// <summary>
+
+        //>  Summary of Work Done:
+        // add learner i use the dlg and box style in copilot
+        //dlg - its a class for adding new forms
+        // course list to add
+        // File maganement task 5 string[] lines = File.ReadAllLines(filePath);
+        //add the text box  for (int i = 1; i < lines.Length; i++)
+
+
+        /// </summary>
+
         private void button10_Click(object sender, EventArgs e)
         {
             //if (courses == null)
@@ -241,6 +262,7 @@ namespace Module4_Task4__seeder
                 dlg.CancelButton = btnCancel;
                 dlg.ClientSize = new Size(390, top + 55);
 
+
                 // No course preselected
                 dlg.Shown += (s, ev) => cmbCourse.SelectedIndex = -1;
 
@@ -279,7 +301,7 @@ namespace Module4_Task4__seeder
                 return false;
             }
 
-            int course = cmbCourse.SelectedIndex;   // e.g. ID511001
+            int course = cmbCourse.SelectedIndex;  
 
             int[] marks = new int[markBoxes.Length];
             for (int i = 0; i < markBoxes.Length; i++)
@@ -312,7 +334,7 @@ namespace Module4_Task4__seeder
                     if (existing.Length > 0 && !existing.EndsWith("\n"))
                         prefix = Environment.NewLine;
                 }
-
+                //
                 string line = $"{nextNumber},{firstName},{lastName},{course},{string.Join(",", marks)}";
                 File.AppendAllText("learners.txt", prefix + line + Environment.NewLine);
 
@@ -337,7 +359,7 @@ namespace Module4_Task4__seeder
             top += 35;
             return tb;
         }
-
+        // 
         private static void ShowWarning(string message, Control focusControl)
         {
             MessageBox.Show(message, "Check Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -572,8 +594,7 @@ namespace Module4_Task4__seeder
 
                     try
                     {
-                        string match = File.ReadAllLines("lecturers.txt")
-                            .FirstOrDefault(l => int.TryParse(l.Split(',')[0], out int lineId) && lineId == id);
+                        string match = File.ReadAllLines("lecturers.txt").FirstOrDefault(l => int.TryParse(l.Split(',')[0], out int lineId) && lineId == id);
 
                         if (match == null)
                         {

@@ -83,3 +83,20 @@ C:\Users\91799\Desktop\porject-1-programming-2-\Module4 Task4- seeder\obj\Debug\
 C:\Users\91799\Desktop\porject-1-programming-2-\Module4 Task4- seeder\obj\Debug\net8.0-windows\Module4 Task4- seeder.pdb
 C:\Users\91799\Desktop\porject-1-programming-2-\Module4 Task4- seeder\obj\Debug\net8.0-windows\Module4 Task4- seeder.genruntimeconfig.cache
 C:\Users\91799\Desktop\porject-1-programming-2-\Module4 Task4- seeder\obj\Debug\net8.0-windows\ref\Module4 Task4- seeder.dll
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\bin\Debug\net8.0-windows\Module4 Task4- seeder.exe
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\bin\Debug\net8.0-windows\Module4 Task4- seeder.deps.json
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\bin\Debug\net8.0-windows\Module4 Task4- seeder.runtimeconfig.json
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\bin\Debug\net8.0-windows\Module4 Task4- seeder.dll
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\bin\Debug\net8.0-windows\Module4 Task4- seeder.pdb
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\obj\Debug\net8.0-windows\Module4_Task4__seeder.Form1.resources
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\obj\Debug\net8.0-windows\Module4 Task4- seeder.csproj.GenerateResource.cache
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\obj\Debug\net8.0-windows\Module4 Task4- seeder.GeneratedMSBuildEditorConfig.editorconfig
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\obj\Debug\net8.0-windows\Module4 Task4- seeder.AssemblyInfoInputs.cache
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\obj\Debug\net8.0-windows\Module4 Task4- seeder.AssemblyInfo.cs
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\obj\Debug\net8.0-windows\Module4 Task4- seeder.csproj.CoreCompileInputs.cache
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\obj\Debug\net8.0-windows\Module4 Task4- seeder.sourcelink.json
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\obj\Debug\net8.0-windows\Module4 Task4- seeder.dll
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\obj\Debug\net8.0-windows\refint\Module4 Task4- seeder.dll
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\obj\Debug\net8.0-windows\Module4 Task4- seeder.pdb
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\obj\Debug\net8.0-windows\Module4 Task4- seeder.genruntimeconfig.cache
+H:\sem project 1\porject-1-programming-2-\Module4 Task4- seeder\obj\Debug\net8.0-windows\ref\Module4 Task4- seeder.dll
