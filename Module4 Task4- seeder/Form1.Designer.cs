@@ -184,7 +184,7 @@
             button12.Name = "button12";
             button12.Size = new Size(190, 31);
             button12.TabIndex = 12;
-            button12.Text = "CalculaRemove a Lecturer";
+            button12.Text = "Remove a Lecturer";
             button12.UseVisualStyleBackColor = true;
             button12.Click += button12_Click;
             // 

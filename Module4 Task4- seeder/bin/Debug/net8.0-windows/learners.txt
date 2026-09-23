@@ -3,3 +3,5 @@
 3,Ethan,Moore,1,60,65,80,85,60
 4,Chloe,Adams,1,20,30,40,65,75
 5,Noah,Baker,2,80,88,90,50,15
+
+6,arjun,prakash,1,77,99,87,65,55
