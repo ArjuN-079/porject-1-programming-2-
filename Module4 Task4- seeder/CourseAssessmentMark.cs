@@ -24,11 +24,11 @@ namespace Module4_Task4__seeder
         //encapsulation {but still use field}
         public Course Course { get => course; set => course = value; }
         public List<int> AssessmentMarks { get => assessmentMarks; set => assessmentMarks = value; }
-        public List<int> GetAllMarks()
+        public List<int> GetAllMarks() //getAllMarks
         {
             return assessmentMarks;
         }
-        public List<string> GetAllGrades()
+        public List<string> GetAllGrades()//GetAllGrades
         {
             List<string> grades = new List<string>();
             foreach (int mark in assessmentMarks)
@@ -38,13 +38,13 @@ namespace Module4_Task4__seeder
             return grades;
         }
 
-        public List<int> GetHighestMarks()
+        public List<int> GetHighestMarks() //GetHighestMarks
         {
             int max= assessmentMarks.Max();
             var higestMark = assessmentMarks.Where(m => m == max).ToList();
             return higestMark ;
         }
-        public List<int> GetLowestMarks ()
+        public List<int> GetLowestMarks () //GetLowestMarks
         {
             var passMark = assessmentMarks.Where(n => n >= 50);
             if (!passMark.Any()) { return new List<int>(); }
@@ -53,20 +53,20 @@ namespace Module4_Task4__seeder
             var lowestMark= assessmentMarks.Where(m=> m == min).ToList();
             return lowestMark;
         }
-        public List<int> GetFailMarks()
+        public List<int> GetFailMarks() //GetFailMarks
         {
             var failMark = assessmentMarks.Where (n => n< 50).ToList();
             return failMark;
         }
-        public double GetAverageMark ()
+        public double GetAverageMark () //etAverageMark
         {
             return assessmentMarks.Average();
         }
-        public string GetAverageGrade()
+        public string GetAverageGrade() //GetAverageGrade
         {
            return GetGrade((int)GetAverageMark());
         }
-        public string GetGrade(int mark)
+        public string GetGrade(int mark) //GetGrade
         {
             string grade;
             switch(mark)

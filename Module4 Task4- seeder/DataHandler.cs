@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 namespace Module4_Task4__seeder
 {
     public class DataHandler
+        //adding learners.txt and lecturer.txt populating the lists of learner and lecturer
     {
         public static void ReadFromFile(string filePath, List<Learner> learners, List<Course> courses)
         {
+            //learner details(path)
             List<string> lines = File.ReadAllLines(filePath).ToList();
             foreach (string line in lines)
             {
@@ -33,9 +35,10 @@ namespace Module4_Task4__seeder
                 learners.Add(learner);
             }
         }
-        //adding the same code to lecturer file
+        //adding the same code to lecturer file.txt
         public static void LecturersFile(string filePath, List<Lecturer> lecturers, List<Course> courses)
         {
+            //lecturer details(path)
             List<string> lines = File.ReadAllLines(filePath).ToList();
             foreach (string line in lines)
             {

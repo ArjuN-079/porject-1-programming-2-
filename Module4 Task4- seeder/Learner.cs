@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Module4_Task4__seeder
 {
-    public class Learner : person
+    public class Learner : person //adding person in learner for enums function in learner code
     {
         private CourseAssessmentMark courseAssessmentMark;
 

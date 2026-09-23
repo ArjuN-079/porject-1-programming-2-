@@ -80,20 +80,7 @@ namespace Module4_Task4__seeder
             }).ToList();
 
         }
-        private void button10_Click(object sender, EventArgs e)
-        {
-            dataGridView1.DataSource = learners.Select(learner => new
-            {
-                learner.FirstName,
-                learner.LastName,
 
-            }).ToList();
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-
-        }
         // Display All grades
         private void button3_Click(object sender, EventArgs e)
         {
@@ -109,20 +96,6 @@ namespace Module4_Task4__seeder
 
         }
 
-        private void button11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-
-        }
         //Display Highest Marks
         private void button4_Click(object sender, EventArgs e)
         {
@@ -185,6 +158,7 @@ namespace Module4_Task4__seeder
                 learner.Id,
                 learner.FirstName,
                 learner.LastName,
+
                 courses_code = learner.CourseAssessmentMark.Course.Code,
                 courses_name = learner.CourseAssessmentMark.Course.Name,
                 AverageGrades = string.Join(",", learner.CourseAssessmentMark.GetAverageGrade
@@ -203,11 +177,59 @@ namespace Module4_Task4__seeder
                 lecturer.Course.Department.Institution.Name,
                 lecturer.Course.Department.Institution.Region,
                 lecturer.Course.Department.Institution.Country,
-                lecturer.Course.Department,
+                department_name = lecturer.Course.Department.Name,
                 lecturer.Course.Code,
-                lecturer.Salary
-                
+                // lecturer.Salary
+                Salary = (int)lecturer.Salary
+
+
+
             }).ToList();
+        }
+        //Add learner
+        private void button10_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = learners.Select(learner => new
+            {
+                learner.FirstName,
+                learner.LastName,
+               // learner.CourseAssessmentMark.Course.course,
+              Course_Name= learner.CourseAssessmentMark
+              .Course.Name,
+                learner.CourseAssessmentMark.Course.Code,
+                department_name = learner.CourseAssessmentMark.Course.Department.Name,
+                Marks = string.Join(",", learner.CourseAssessmentMark.GetAllMarks())
+            }).ToList();
+        }
+
+        //Add lecturer Button
+        private void button11_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = lecturers.Select(lecturer => new
+            {
+                lecturer.FirstName,
+                lecturer.LastName,
+                lecturer.Position,
+                Course_Name = lecturer.Course.Name,
+
+                Salary = (int)lecturer.Salary
+
+
+            }).ToList();
+        }
+
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void button13_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void button14_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

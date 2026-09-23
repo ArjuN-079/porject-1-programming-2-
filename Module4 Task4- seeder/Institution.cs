@@ -8,6 +8,7 @@ namespace Module4_Task4__seeder
 {
     public class Institution
     {
+        //fields
         private string name;
         private string region;
         private string country;
